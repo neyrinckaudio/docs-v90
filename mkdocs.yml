@@ -1,0 +1,50 @@
+site_name: V-90 User Guide
+site_description: User Guide for the Neyrinck V-90 plug-ins.
+site_url: https://docs.neyrinck.com/v90/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - toc.integrate
+    - search.highlight
+plugins:
+  - search
+nav:
+  - Home:
+    - Welcome To V-90: './index.md'
+    - Quick Start Guide: './quick-start-guide.md'
+  - Getting Started:
+    - Installation: './getting-started/installation.md'
+    - Activating the License: './getting-started/licensing.md'
+    - System Requirements: './getting-started/requirements.md'
+  - Using V-90:
+    - The V-90 Panel: './using/panel.md'
+    - Memories and Recall: './using/memories.md'
+    - Signal Flow and Track Formats: './using/signal-flow.md'
+    - Automation: './using/automation.md'
+    - MIDI Control: './using/midi.md'
+  - Plug-Ins:
+    - V-90 Symphonic: './plugins/symphonic.md'
+    - V-90 Reverbs: './plugins/reverbs.md'
+    - V-90 Reflections: './plugins/reflections.md'
+    - V-90 Modulations: './plugins/modulations.md'
+    - V-90 Pitch Change: './plugins/pitch-change.md'
+  - Reference:
+    - Memory List: './reference/memory-list.md'
+    - Troubleshooting: './reference/troubleshooting.md'
+    - Release Notes: './reference/release-notes.md'
+
+markdown_extensions:
+  - attr_list
+  - meta
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower

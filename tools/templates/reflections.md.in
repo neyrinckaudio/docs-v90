@@ -1,0 +1,42 @@
+# V-90 Reflections
+
+V-90 Reflections has the original unit's early-reflection programs. Instead of a smooth reverb tail, they produce a pattern of distinct reflections: for ambience, room sound, and the gated and reverse effects of the 1980s.
+
+![V-90 Reflections](../images/reflections.png)
+
+| Memory | Program | Character |
+|---|---|---|
+| 5 | Early Ref. 1 | Early reflections of a room, hall or plate. |
+| 6 | Early Ref. 2 | A second early-reflection program with the same controls and a different sound. |
+| 16 | Gate Reverb | A dense burst of reflections that stops abruptly, like a gated reverb. |
+| 17 | Reverse Gate | Reflections that build up instead of dying away, like a reversed reverb. |
+
+All four programs have the same parameters, with their own factory settings.
+
+## Parameters
+
+The defaults shown are Early Ref. 1's.
+
+{{table reflections 5}}
+
+### Reflection Types
+
+| TYPE | Pattern |
+|---|---|
+| HALL | Reflections spaced as in a concert hall. |
+| RANDOM | Irregularly spaced reflections. |
+| REVERSE | Reflections that grow louder, for a reverse effect. |
+| PLATE | Dense reflections, like a plate reverb. |
+
+### Factory Settings
+
+| Program | TYPE | ROOM SIZE | LIVENESS | DELAY | LPF | BALANCE |
+|---|---|---|---|---|---|---|
+| Early Ref. 1 | HALL | 2.0 | 5 | 10.0 ms | THRU | 100 % |
+| Early Ref. 2 | HALL | 2.0 | 5 | 10.0 ms | THRU | 100 % |
+| Gate Reverb | RANDOM | 2.0 | 5 | 20.0 ms | 6.3 kHz | 100 % |
+| Reverse Gate | REVERSE | 3.3 | 5 | 25.0 ms | THRU | 100 % |
+
+## AAX DSP
+
+V-90 Reflections runs as AAX Native only.
